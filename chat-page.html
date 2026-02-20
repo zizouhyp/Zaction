@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Chat</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/chat-page.css">
+</head>
+<body>
+  <div class="chat-screen">
+
+    <div class="chat-top">
+      <img src="icons/back.png" class="icon" id="back">
+      <div class="chat-user">
+        <img src="icons/user.png" class="icon" class="pfp">
+        <div>
+          <span class="name" id="chat-name">User</span>
+          <span class="status">online</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="messages" id="messages">
+      <div class="msg left">
+        <span>Hello 👋</span>
+      </div>
+
+      <div class="msg right">
+        <span>Hey! What’s up?</span>
+      </div>
+    </div>
+
+    <div class="chat-input">
+      <input type="text" id="msg-input" placeholder="Type a message...">
+      <button id="send-btn">➤</button>
+    </div>
+
+  </div>
+
+  <script src="scripts/chat-page.js"></script>
+</body>
+</html>

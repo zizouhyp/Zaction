@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/profile.css">
+  <title>Profile</title>
+</head>
+<body>
+  <div class="background">
+    <div class="top-bar">
+      <img src="icons/settings.png" id="setting" alt="Settings" class="icons">
+    </div>
+
+    <div class="content">
+      <div class="profile-card">
+        <div class="avatar-wrapper">
+  <img src="icons/user.png" alt="Avatar" class="avatar" id="avatar-img">
+  <label for="avatar-input" class="change-avatar">Change</label>
+  <input type="file" id="avatar-input" accept="image/*" style="display:none">
+</div>
+        <div class="name">Aomar Benessalah</div>
+        <div class="bio">Fullstack Developer | JS & Python Lover | UI/UX Enthusiast</div>
+
+        <div class="stats">
+          <div><span>250</span>Posts</div>
+          <div><span>3.4K</span>Followers</div>
+          <div><span>180</span>Following</div>
+        </div>
+
+        <div class="buttons">
+          <button id="follow-btn">Follow</button>
+          <button id="message-btn">Message</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="main-tools">
+      <img src="icons/home.png" alt="Home" class="icons active" id="home-page">
+      <img src="icons/gift.png" alt="Support" class="icons" id="support-ing">
+    </div>
+  </div>
+
+  <script src="scripts/profile.js"></script>
+</body>
+</html>

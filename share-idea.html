@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Share Idea</title>
+  <link rel="stylesheet" href="styles/share-idea.css">
+</head>
+<body>
+  <div class="background">
+
+    <div class="top-bar">
+      <h3>Share an idea</h3>
+    </div>
+
+    <div class="content">
+      <div class="idea-card">
+
+  <div class="share-modes">
+    <button class="mode-btn active" id="idea-mode">Idea</button>
+    <button class="mode-btn" id="code-mode">
+      <img src="icons/paper-plane.png" class="mode-icon">
+      Code
+    </button>
+  </div>
+
+  <textarea
+    id="idea-input"
+    placeholder="Write your idea here..."
+  ></textarea>
+
+  <textarea
+    id="code-input"
+    placeholder="Paste your code here..."
+  ></textarea>
+
+  <div class="idea-actions">
+    <button id="clear-btn">Clear</button>
+    <button id="share-btn">Share</button>
+  </div>
+
+</div>
+      </div>
+    </div>
+
+    <div class="main-tools">
+      <img src="icons/home.png" class="icons" id="home-page">
+      <img src="icons/search.png" class="icons" id="explore-page">
+      <img src="icons/cube.png" class="icons active" id="share-idea-page">
+      <img src="icons/envelope.png" class="icons" id="inbox-page">
+      <img src="icons/user.png" class="icons" id="my-page">
+    </div>
+
+  </div>
+
+  <script src="scripts/share-idea.js"></script>
+</body>
+</html>
