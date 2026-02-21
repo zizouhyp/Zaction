@@ -1,0 +1,102 @@
+@font-face {
+  font-family: 'Mono';
+  src: url('font/mono.ttf') format('truetype');
+}
+
+* {
+  box-sizing: border-box;
+  font-family: Mono;
+}
+
+body {
+  font-family: 'Mono';
+  margin: 0;
+  background: #111;
+  color: #fff;
+}
+
+.screen {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.top-menu {
+  height: 10%;
+  background: #333;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 0 15px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.6);
+}
+
+.top-menu h2 {
+  font-size: 18px;
+}
+
+.icon {
+  height: 28px;
+  filter: invert(100%);
+  opacity: 1;
+}
+
+.page {
+  gap: 10px;
+  flex: 1;
+  background: #222;
+  padding: 10px;
+  overflow-y: auto;
+}
+
+.friend {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  border-radius: 10px;
+  background: #2a2a2a;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.friend:hover {
+  background: #3a3a3a;
+  transform: scale(1.01);
+}
+
+.pfp {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+
+.friend-info {
+  flex: 1;
+}
+
+.name {
+  display: block;
+  font-weight: bold;
+}
+
+.last-msg {
+  font-size: 13px;
+  color: #aaa;
+}
+
+.time {
+  font-size: 12px;
+  color: #888;
+}
+
+.add-fr {
+  transform: scale(0.9);
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #2a2a2a;
+  padding: 10%;
+  border: rgba(255, 255, 255, 0.3) 5px solid;
+}

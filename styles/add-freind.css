@@ -1,0 +1,146 @@
+@font-face {
+  font-family: 'Mono';
+  src: url('fonts/mono.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Mono', monospace;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #222, #111);
+  color: #fff;
+}
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px;
+  background: #111;
+  display: flex;
+  justify-content: center;
+  z-index: 100;
+  border-bottom: 1px solid #222;
+}
+
+.header input {
+  width: 300px;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  background: #1a1a1a;
+  color: #fff;
+}
+
+.header input::placeholder {
+  color: #888;
+}
+
+.container {
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.orbital {
+  position: relative;
+  width: 260px;
+  height: 260px;
+  margin: 50px auto;
+}
+
+.core {
+  position: absolute;
+  inset: 50%;
+  transform: translate(-50%, -50%);
+  width: 120px;
+  height: 120px;
+  background: #222;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.core span {
+  font-size: 13px;
+  line-height: 1.2;
+}
+
+.orbit {
+  position: absolute;
+  inset: 0;
+  animation: spin 18s linear infinite;
+}
+
+.line {
+  position: absolute;
+  inset: 20px;
+  border: 1px dashed #555;
+  border-radius: 50%;
+}
+
+.bobble-wrap {
+  position: absolute;
+  width: 36px;
+  height: 36px;
+}
+
+.b1 { top: -5px; left: 50%; transform: translateX(-50%); }
+.b2 { top: 25%; right: -5px; transform: translateY(-50%); }
+.b3 { bottom: 25%; right: -5px; transform: translateY(50%); }
+.b4 { bottom: -5px; left: 50%; transform: translateX(-50%); }
+.b5 { bottom: 25%; left: -5px; transform: translateY(50%); }
+.b6 { top: 25%; left: -5px; transform: translateY(-50%); }
+
+.bobble {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid #777;
+  animation: counterSpin 18s linear infinite;
+}
+ .more-info {
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   width: 100%;
+   background-color: rgba(60, 60, 60, 0.2);
+ }
+
+h1 {
+  animation: text-move 1s ease-in;
+}
+
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes counterSpin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(-360deg); }
+}
+
+@keyframes text-move {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

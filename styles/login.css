@@ -1,0 +1,124 @@
+
+
+@font-face {
+  font-family: 'Mono';
+  src: url('font/mono.ttf') format('truetype');
+}
+
+body {
+  gap: 10px;
+  font-family: 'Mono';
+  background-color: #111;
+  border: #111 solid 5px;
+}
+
+.background {
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.prof {
+  background-color: #222;
+  width: 100%;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.ico {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.icons {
+  filter: invert(100%);
+}
+
+.inputs {
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+input::placeholder {
+  color: #AAA;
+}
+
+.inpu {
+  color: #fff;
+  width: 45%;
+  border-radius: 10px;
+  text-align: left;
+  height: 30px;
+  background-color: #222;
+  border: #333 solid 3px;
+}
+
+.passwords-inp {
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#password {
+  width: 63%;
+}
+
+.policity {
+  border-radius: 40px;
+  padding: 5%;
+  background-color: #111;
+  width: 60%;
+  color: #fff;
+}
+
+#signup {
+  color: green;
+}
+
+.sub-1 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.submit-btn {
+  font-size: 20px;
+  font-family: 'Mono';
+  border: none;
+  background-color: #333;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: #444;
+}
+
+#togglePassword {
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+#togglePassword:active {
+  transform: scale(0.9);
+  opacity: 0.7;
+}
+
+input:focus {
+  outline: none;
+  box-shadow: none;
+}
